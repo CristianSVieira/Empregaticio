@@ -1,12 +1,35 @@
 <style>
-  input {
-      width:100%;
+	.largura-toda {
+		width: 100%;
+	}
+
+	.bordado {
+		background-color: #808080;
+
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+  .painel {
+      background-color: white;
   }
 
 </style>
 
 <div>
-  <input class="pesquisa" name ="pesquisa" [value]="pesquisa_val" [(ngModel)]="pesquisa_val"/>
+  <input class="largura-toda" name ="pesquisa" [value]="pesquisa_val" [(ngModel)]="pesquisa_val"/>
+
+  <div class="bordado largura-toda">
+    <div class="painel largura-toda">
+      <p>nirsedao</p>
+    </div>
+
+    <p>nirsedao</p>
+    <p>nirsedao</p>
+    <p>nirsedao</p>
+    <p>nirsedao</p>
+  </div>
+
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

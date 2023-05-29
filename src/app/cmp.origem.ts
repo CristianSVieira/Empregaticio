@@ -18,7 +18,7 @@ export class CmpOrigem implements OnInit {
 	//constructor() {}
 
   @HostListener("keyup", ["pesquisa_val"])
-	premiuClave(pesquisa_val: any) {
+	premiuClave(pesquisa_val: unknown) {
 		console.log(pesquisa_val);
 	}
 
