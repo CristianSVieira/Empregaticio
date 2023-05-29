@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
+import { FormsModule } from "@angular/forms";
+
 import { CmpOrigem } from "./cmp.origem";
 
 @NgModule({
@@ -8,7 +10,8 @@ import { CmpOrigem } from "./cmp.origem";
 		CmpOrigem
 	],
 	imports: [
-		BrowserModule
+		BrowserModule,
+		FormsModule
 	],
 	providers: [],
 	bootstrap: [CmpOrigem]
