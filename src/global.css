@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	margin: 20px
+}
+
 .animação-levitar { transition: all 0.2s ease-in-out; }
 .animação-levitar:hover { transform: translateY(-0.25rem) }
 
