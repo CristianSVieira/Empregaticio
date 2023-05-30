@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.animação-levitar { transition: all 0.2s ease-in-out; }
+.animação-levitar:hover { transform: translateY(-0.25rem) }
+
+.fundo-branco { background-color: white; }
+.fundo-cinza { background-color: #808080; }
+.preenchimento-30 { padding: 30px; }
+.preenchimento-20 { padding: 20px; }
+.preenchimento-10 { padding: 10px; }
+
+input {
+	box-sizing: border-box;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid black;
+	margin-bottom: 0;
+	padding: 0;
+}

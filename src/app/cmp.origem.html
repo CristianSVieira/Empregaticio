@@ -3,32 +3,60 @@
 		width: 100%;
 	}
 
-	.bordado {
-		background-color: #808080;
+	.posição-direita {
+		justify-content: end;
+	}
 
-		border-radius: 15px;
+	.orientação-horizontal {
+		display: flex;
+	}
+
+	.bordado {
+		border-radius: 12px;
 		overflow: hidden;
 	}
 
-  .painel {
-      background-color: white;
-  }
+	.conteúdo-painel {
+		display: grid;
+		list-style: none;
+	}
+
+	.conteúdo-painel-cabeçalho {
+		display: grid;
+		list-style: none;
+	}
+
+	.conteúdo-painel-cabeçalho > li:nth-child(1) {
+		grid-column-start: 1;
+		justify-self: start;
+	}
+
+	.conteúdo-painel-cabeçalho > li:nth-child(2) {
+		grid-column-start: 2;
+		justify-self: end;
+	}
 
 </style>
 
 <div>
   <input class="largura-toda" name ="pesquisa" [value]="pesquisa_val" [(ngModel)]="pesquisa_val"/>
 
-  <div class="bordado largura-toda">
-    <div class="painel largura-toda">
-      <p>nirsedao</p>
+  <div class="conteúdo-painel bordado fundo-cinza animação-levitar largura-toda">
+    <div class="fundo-branco preenchimento-10">
+        <ul class="conteúdo-painel-cabeçalho">
+        <li>Título da vaga</li>
+        <li>R$(Salário da vaga)</li>
+        </ul>
+        <p>NOME DA EMPRESA</p>
     </div>
 
-    <p>nirsedao</p>
-    <p>nirsedao</p>
-    <p>nirsedao</p>
-    <p>nirsedao</p>
-  </div>
+    <hr />
+      
+    <div class="preenchimento-30">
+        <p>Escolaridade da vaga</p>
+        <p>Descripção da vaga</p>
+      </div>
+    </div>
 
 </div>
 
